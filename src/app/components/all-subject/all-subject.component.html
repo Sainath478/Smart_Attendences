@@ -1,0 +1,27 @@
+<app-admin-menu></app-admin-menu>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>All Subjects</h1>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>Subject Code</th>
+            <th>Subject Name</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let subject of subjectList">
+            <td>{{ subject.id }}</td>
+            <td>{{ subject.name |titlecase }}</td>
+            <td>
+              <a [routerLink]="['/edit-subject', subject.id]">Edit</a>
+              <a (click)="deleteSubject(subject.id)" class="text-danger">Delete</a>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,110 @@
+/* --- Admin Menu Styling --- */
+app-admin-menu {
+  display: block;
+  background: #1f1f1f;
+  padding: 15px;
+  text-align: center;
+}
+
+app-admin-menu a {
+  color: #fff;
+  font-size: 18px;
+  margin: 0 15px;
+  text-decoration: none;
+  transition: 0.3s;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+app-admin-menu a:hover {
+  background: #ff9800;
+  color: #000;
+  transition: 0.3s;
+}
+
+/* --- Container Styling --- */
+.container {
+  margin-top: 30px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* --- Heading Styling --- */
+h1 {
+  text-align: center;
+  color: #1f1f1f;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* --- Table Styling --- */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+/* --- Header (Username, Password, etc.) Styling --- */
+.table thead {
+  background: linear-gradient(135deg, #1f4037, #99f2c8); /* Gradient background */
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.table thead th {
+  padding: 15px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* --- Body Row Styling --- */
+.table tbody tr {
+  transition: 0.3s;
+}
+
+.table tbody tr:hover {
+  background: #ececec; /* Light grey hover */
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* --- Table Cells Styling --- */
+.table tbody td {
+  text-align: center;
+  padding: 12px;
+  font-size: 14px;
+  color: #333;
+}
+
+/* --- Buttons Styling --- */
+.btn {
+  padding: 8px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn-primary {
+  background: #007bff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #0056b3;
+  transform: scale(1.05);
+}
+
+.btn-danger {
+  background: #dc3545;
+  border: none;
+}
+
+.btn-danger:hover {
+  background: #a71d2a;
+  transform: scale(1.05);
+}

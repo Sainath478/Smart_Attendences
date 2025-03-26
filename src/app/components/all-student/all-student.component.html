@@ -1,0 +1,29 @@
+<app-faculty-menu></app-faculty-menu>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Students List</h1>
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let student of studentList">
+            <td>{{ student.id }}</td>
+            <td>{{ student.name |titlecase}}</td>
+            <td>{{ student.email }}</td>
+            <td>
+              <a [routerLink]="['/edit-student', student.id]">Edit</a>
+              <button (click)="deleteStudent(student.id)"  class="btn btn-danger">Delete</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>

@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AddSubjectComponent } from './components/add-subject/add-subject.component';
+
 
 @Component({
   selector: 'app-root',
