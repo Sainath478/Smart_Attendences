@@ -8,51 +8,51 @@ import { catchError } from 'rxjs/operators';
 })
 export class UserService {
   getAllFaculty(): Observable<any> {
-    const apiUrl = "http://localhost:8091/user/get-all-faculty";
+    const apiUrl = "http://localhost:8080/user/get-all-faculty";
     return this.http.get(apiUrl);
   }
 
   constructor(private http: HttpClient) {}
 
   login(user: any): Observable<any> {
-    const apiUrl = "http://localhost:8091/user/login-user";
+    const apiUrl = "http://localhost:8080/user/login-user";
 
     return this.http.post(apiUrl, user);
 
   }
 
   registerUser(user: any): Observable<any> {
-    const apiUrl = "http://localhost:8091/user/register-user";
+    const apiUrl = "http://localhost:8080/user/register-user";
 
     return this.http.post(apiUrl, user,{responseType: 'text' as 'json'});
   }
 
   getAllUsers(): Observable<any> {
-    const apiUrl = "http://localhost:8091/user/get-all-user";
+    const apiUrl = "http://localhost:8080/user/get-all-user";
 
     return this.http.get(apiUrl);
   }
 
   deleteUser(username: String): Observable<any> {
-    const apiUrl = `http://localhost:8091/user/delete-user-by-username/?username=${username}`;
+    const apiUrl = `http://localhost:8080/user/delete-user-by-username/?username=${username}`;
 
     return this.http.delete(apiUrl,{responseType: 'text'});
   }
 
   editUser(user: any): Observable<any> {
-    const apiUrl = "http://localhost:8091/user/update-user";
+    const apiUrl = "http://localhost:8080/user/update-user";
 
     return this.http.put(apiUrl, user,{responseType: 'text'});
   }
 
   getUserByUsername(username: String): Observable<any> {
-    const apiUrl = `http://localhost:8091/user/get-user-by-username/${username}`;
+    const apiUrl = `http://localhost:8080/user/get-user-by-username/${username}`;
 
     return this.http.get(apiUrl);
   }
 
   updateUser(user: any): Observable<any> {
-    const apiUrl = "http://localhost:8091/user/update-user";
+    const apiUrl = "http://localhost:8080/user/update-user";
 
     return this.http.put(apiUrl, user,{responseType: 'text'});
   }

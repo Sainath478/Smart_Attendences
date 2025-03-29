@@ -6,11 +6,8 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class SubjectService {
-  deleteSubject(subjectId: any) {
-    throw new Error('Method not implemented.');
-  }
 
-  private apiUrl = 'http://localhost:8091/subject/add-subject';
+  private apiUrl = 'http://localhost:8080/subject/add-subject';
 
   constructor(private http: HttpClient) {}
 
@@ -19,28 +16,28 @@ export class SubjectService {
   }
 
   getAllSubjects(): Observable<any> {
-    const apiUrl = 'http://localhost:8091/subject/get-all-subjects';
+    const apiUrl = 'http://localhost:8080/subject/get-all-subjects';
     return this.http.get(apiUrl);
   }
 
 
  deleteSubjectById(subjectId: any): Observable<any> {
-    const apiUrl = `http://localhost:8091/subject/delete-subject/${subjectId}`;
+    const apiUrl = `http://localhost:8080/subject/delete-subject/${subjectId}`;
     return this.http.delete(apiUrl, { responseType: 'text' });
   }
 
   editSubject(subject: any): Observable<any> {
-    const apiUrl = 'http://localhost:8091/subject/update-subject';
+    const apiUrl = 'http://localhost:8080/subject/update-subject';
     return this.http.put(apiUrl, subject, { responseType: 'text' });
   }
 
   getSubjectById(id: any): Observable<any> {
-    const apiUrl = `http://localhost:8091/subject/get-subject-by-id/${id}`;
+    const apiUrl = `http://localhost:8080/subject/get-subject-by-id/${id}`;
     return this.http.get(apiUrl);
   }
 
   updateSubject(subject: any): Observable<any> {
-    const apiUrl = 'http://localhost:8091/subject/update-subject';
+    const apiUrl = 'http://localhost:8080/subject/update-subject';
     return this.http.put(apiUrl, subject, { responseType: 'text' });
   }
 
