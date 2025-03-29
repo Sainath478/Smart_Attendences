@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # SMASTRACK
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.8.
@@ -25,3 +26,7 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+=======
+# Smart_Attendences
+The Smart Attendance System is a role-based web application that allows students, faculty, and administrators to manage and track attendance efficiently. It eliminates manual attendance processes by integrating automated attendance tracking, reporting, and user management.
+>>>>>>> 3b9e8c4e5d15c2747adc4ce4b2a2207dcabd114d
